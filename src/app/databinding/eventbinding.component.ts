@@ -10,7 +10,7 @@ export class EventbindingComponent {
   constructor() { }
 
   public onEvenBindingClicked() {
-    alert('Yes u got it');
+    alert('Yes u got it right');
   }
 
 }
