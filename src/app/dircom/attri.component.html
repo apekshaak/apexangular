@@ -1,0 +1,108 @@
+<p>
+  attribute Directive!
+</p>
+<hr>
+<div>
+  <h2> ng Class</h2>
+</div>
+
+  <div [ngStyle]= "{'width' :'100px', 'height' : '100px',
+   'border' : '1px solid red'}">
+      hi...
+  </div>
+
+  <div [ngClass] ="{myDiv :true}">
+      hi
+    </div>
+  <div [ngClass] ="{myDiv : true}" 
+  [style.border]="' 2 px solid green'">
+    hi
+  </div>
+
+  <h1>
+    Custom attribute directive...
+  </h1>
+
+  <div>
+    <input type="text" [Resizer]="300">
+  </div>
+
+  <div>
+    <input type="text" [Resizer]="100">
+  </div>
+
+  <h1> Structural Directive</h1>
+
+  <div> *ngFor</div>
+
+  <div>
+    <ul>
+      <li *ngFor="let item of ['India','China','Japan','Sri Lanka','US']">
+        <a href="#">{{item}}</a>
+        </li>
+        </ul>
+  </div>
+
+  <div>
+  <div *ngIf="isTrue">
+    Yes it is True
+  </div>
+  <div>
+    <input tpe="button" (click)="isTrue = !isTrue" value="ok">
+  </div>
+  </div>
+
+<div>
+  <h2> *ngSwitch</h2>
+</div>
+<div ngSwitch="day">
+  <div *ngSwitchCase="1">
+      It is sunday
+    </div>
+  <div ngsWitchCase="2">
+    It is Monday
+  </div>
+  <div *ngSwitchCase="3">
+    It is Tuesday
+  </div>
+  <div *ngSwitchDefault>
+    It is Unknown
+  </div>
+</div>
+
+<div>
+  <input type="button" (click)=" day= 1" value="One"/>
+  <input type="button" (click)=" day= 2" value="Two"/>
+  <input type="button" (click)=" day= 3" value="Three"/>
+</div>
+
+
+<div>
+  <h2> template [ngIf]</h2>
+
+  <template [ngIf]="isTrue">
+    <div>
+      Yes it is true
+    </div>
+  </template>
+
+  <div>
+    <input type="button" (click)="isTrue =!isTrue" value="okey">
+  </div>
+</div>
+
+<div>
+    <h2>
+      Own Structural Directive
+    </h2>
+
+    <div *appOwndir="2">
+      Yes it is one
+    </div>
+
+    <template [appOwndir]="2">
+      <div>
+        Yes it is one
+      </div>
+   </template>
+</div>

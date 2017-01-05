@@ -8,10 +8,10 @@ import { MyCompoComponent } from './my-compo/my-compo.component';
 import { FlatComponentComponent } from './my-compo/flat-component.component';
 import { DatabindingComponent } from './databinding/databinding.component';
 import { PropertybindingComponent } from './databinding/propertybinding.component';
-import { IntercomponentComponent} from './intercomponent/intercomponent.component';
+//import { IntercompcommComponent} from './intercomponent/intercomponent.component';
 //import { IntercomponentComponent, IntercompcommComponent }
  //from './intercomponent/intercomponent.component';
-import { ImgpanelComponent } from './intercomponent/imgpanel.component';
+//import { ImgpanelComponent } from './intercomponent/imgpanel.component';
 import { LifecycleComponent } from './lifecycle/lifecycle.component';
 import { ProjectionComponent } from './projection/projection.component';
 import { LifecycleindexComponent } from './lifecycle/lifecycleindex.component';
@@ -19,7 +19,29 @@ import { ProjectionindexComponent } from './projection/projectionindex.component
 import { EventbindingComponent } from './databinding/eventbinding.component';
 import { TwowaybindingComponent } from './databinding/twowaybinding.component';
 import { DemoexampleComponent } from './databinding/demoexample.component';
-import { BtnpanelComponent } from './intercomponent/btnpanel.component';
+import { IntercComponent } from './interc/interc.component';
+import { BtnpannelComponent } from './interc/btnpannel.component';
+import { ImgpannelComponent } from './interc/imgpannel.component';
+import { Projectmod1Component } from './projectmod1/projectmod1.component';
+import { HeaderComponent } from './projectmod1/header.component';
+import { LeftmenuComponent } from './projectmod1/leftmenu.component';
+import { MaincontentComponent } from './projectmod1/maincontent.component';
+import { ProjindexComponent } from './projectmod1/projindex.component';
+import { DircomComponent } from './dircom/dircom.component';
+//import { AttriComponent } from './dircom/attri/attri.component';
+import { ResizerDirective } from './dircom/resizer.directive';
+import { AttriComponent } from './dircom/attri.component';
+import { OwndirDirective } from './dircom/owndir.directive';
+//import { Projectmod1Component } from './projectmod1/projectmod1.component';
+//import { HeaderComponent } from './header.component';
+//import { LeftmenuComponent } from './leftmenu.component';
+//import { MaincontentComponent } from './maincontent.component';
+//import { ProjectindexComponent } from './projectindex.component';
+//import { HeaderComponent } from './projectmod1/header.component';
+//import { LeftmenuComponent } from './projectmod1/leftmenu.component';
+//import { MaincontentComponent } from './projectmod1/maincontent.component';
+//import { ProjectindexComponent } from './projectmod1/projectindex.component';
+//import { BtnpanelComponent } from './intercomponent/btnpanel.component';
 
 @NgModule({
   declarations: [
@@ -28,8 +50,8 @@ import { BtnpanelComponent } from './intercomponent/btnpanel.component';
     FlatComponentComponent,
     DatabindingComponent,
     PropertybindingComponent,
-    IntercomponentComponent,
-    ImgpanelComponent,
+    //IntercompcommComponent,
+    //ImgpanelComponent,
     LifecycleComponent,
     ProjectionComponent,
     LifecycleindexComponent,
@@ -37,7 +59,29 @@ import { BtnpanelComponent } from './intercomponent/btnpanel.component';
     EventbindingComponent,
     TwowaybindingComponent,
     DemoexampleComponent,
-    BtnpanelComponent
+    IntercComponent,
+    BtnpannelComponent,
+    ImgpannelComponent,
+    Projectmod1Component,
+    HeaderComponent,
+    LeftmenuComponent,
+    MaincontentComponent,
+    ProjindexComponent,
+    DircomComponent,
+    //AttriComponent,
+    ResizerDirective,
+    AttriComponent,
+    OwndirDirective,
+   // Projectmod1Component,
+    //HeaderComponent,
+    //LeftmenuComponent,
+    //MaincontentComponent,
+    //ProjectindexComponent,
+    //HeaderComponent,
+    //LeftmenuComponent,
+    //MaincontentComponent,
+    //ProjectindexComponent,
+    //BtnpanelComponent
   ],
   imports: [
     BrowserModule,
