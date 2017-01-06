@@ -1,9 +1,9 @@
 import { Directive, ViewContainerRef, TemplateRef, Input } from '@angular/core';
 
 @Directive({
-  selector: '[appOwndir]'
+  selector: '[ownStr]'
 })
-export class OwndirDirective {
+export class OwnstrDirective {
 
   private tempRef: TemplateRef<any>;
   private viewCon: ViewContainerRef;
@@ -15,7 +15,7 @@ export class OwndirDirective {
     this.viewCon= viewCon;
   }
 
-  @Input('appOwndir') public set data(num :number)
+  @Input('ownStr') public set data(num :number)
   {
     if(num ==1) this.viewCon.createEmbeddedView(this.tempRef);
     else this.viewCon.clear();

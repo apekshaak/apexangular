@@ -31,7 +31,10 @@ import { DircomComponent } from './dircom/dircom.component';
 //import { AttriComponent } from './dircom/attri/attri.component';
 import { ResizerDirective } from './dircom/resizer.directive';
 import { AttriComponent } from './dircom/attri.component';
-import { OwndirDirective } from './dircom/owndir.directive';
+import { OwnstrDirective } from './dircom/ownstr.directive';
+import { ServiceComponent } from './service/service.component';
+import { ServiceindexComponent } from './service/serviceindex.component';
+import { ImpcompComponent } from './service/impcomp.component';
 //import { Projectmod1Component } from './projectmod1/projectmod1.component';
 //import { HeaderComponent } from './header.component';
 //import { LeftmenuComponent } from './leftmenu.component';
@@ -71,7 +74,10 @@ import { OwndirDirective } from './dircom/owndir.directive';
     //AttriComponent,
     ResizerDirective,
     AttriComponent,
-    OwndirDirective,
+    OwnstrDirective,
+    ServiceComponent,
+    ServiceindexComponent,
+    ImpcompComponent,
    // Projectmod1Component,
     //HeaderComponent,
     //LeftmenuComponent,
