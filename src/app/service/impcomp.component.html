@@ -2,10 +2,18 @@
 <hr>
 <div>
   <ul>
-    <li *ngFor="let city of cities" {}>{}
+    <li *ngFor="let city of cities" >{{city}}
 
     </li>
 
   </ul>
+  <div>
+    <input type="text" #city/>
+    <input type="button" value="ok" (click)="addNewCity(city.value)">
 
+  </div>
+
+</div>
+
+<div class="square" [style.background]="color">
 </div>

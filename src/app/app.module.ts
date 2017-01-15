@@ -1,3 +1,5 @@
+import { FirstService } from './service/first.service';
+import { BridgeService } from './service/bridge.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -35,6 +37,12 @@ import { OwnstrDirective } from './dircom/ownstr.directive';
 import { ServiceComponent } from './service/service.component';
 import { ServiceindexComponent } from './service/serviceindex.component';
 import { ImpcompComponent } from './service/impcomp.component';
+import { RoutingComponent } from './routing/routing.component';
+import { RegistrationrComponent } from './routing/registrationr.component';
+import { LoginrComponent } from './routing/loginr.component';
+import { RouterindexComponent } from './routing/routerindex.component';
+import { PipesComponent } from './pipes/pipes.component';
+import { MycurrPipe } from './pipes/mycurr.pipe';
 //import { Projectmod1Component } from './projectmod1/projectmod1.component';
 //import { HeaderComponent } from './header.component';
 //import { LeftmenuComponent } from './leftmenu.component';
@@ -78,6 +86,12 @@ import { ImpcompComponent } from './service/impcomp.component';
     ServiceComponent,
     ServiceindexComponent,
     ImpcompComponent,
+    RoutingComponent,
+    RegistrationrComponent,
+    LoginrComponent,
+    RouterindexComponent,
+    PipesComponent,
+    MycurrPipe,
    // Projectmod1Component,
     //HeaderComponent,
     //LeftmenuComponent,
@@ -94,7 +108,7 @@ import { ImpcompComponent } from './service/impcomp.component';
     FormsModule,
     HttpModule
   ],
-  providers: [],
+  providers: [FirstService,BridgeService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
